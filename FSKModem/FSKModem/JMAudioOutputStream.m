@@ -30,7 +30,6 @@ static const int BUFFER_BYTE_SIZE = 1024;
 
 @property (readonly) AudioStreamPacketDescription* packetDescriptions;
 @property (readonly) BOOL stopped;
-@property (readonly) BOOL audioPlayerShouldStopImmediately;
 @property (readonly) UInt32 bufferByteSize;
 @property (readonly) UInt32	bufferPacketCount;
 

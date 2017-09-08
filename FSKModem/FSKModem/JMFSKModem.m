@@ -204,6 +204,7 @@ static const int BYTES_PER_FRAME = (NUM_CHANNELS * (BITS_PER_CHANNEL / 8));
 		^{
 			__strong typeof(weakSelf) strongSelf = weakSelf;
 		
+			[strongSelf->_outputStream setAudioPlayerShouldStopImmediately:YES];
 			[strongSelf->_inputStream stop];
 			[strongSelf->_outputStream stop];
 		

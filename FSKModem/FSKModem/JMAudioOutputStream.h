@@ -33,4 +33,6 @@
 - (void) pause;
 - (void) resume;
 
+@property BOOL audioPlayerShouldStopImmediately;
+
 @end
