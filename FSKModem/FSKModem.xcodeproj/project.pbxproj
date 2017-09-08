@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B4A39425196B1037002C7324 /* FSKModem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A39424196B1037002C7324 /* FSKModem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4A3943B196B1078002C7324 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A39439196B1078002C7324 /* AudioToolbox.framework */; };
-		B4A3943C196B1078002C7324 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A3943A196B1078002C7324 /* AVFoundation.framework */; };
 		B4A3943D196B108E002C7324 /* JMProtocolDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E858D1968AA5B00148E42 /* JMProtocolDecoder.m */; };
 		B4A3943E196B108E002C7324 /* JMProtocolEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E85901968AA5B00148E42 /* JMProtocolEncoder.m */; };
 		B4A3943F196B108E002C7324 /* JMQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E85921968AA5B00148E42 /* JMQueue.m */; };
@@ -65,18 +63,14 @@
 		B4B5D5AC1ED0529B00AF8BDB /* JMFSKModem.h in Headers */ = {isa = PBXBuildFile; fileRef = B44E85891968AA5B00148E42 /* JMFSKModem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4B5D5AD1ED0529B00AF8BDB /* JMFSKModemConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = B41254711969BE15009D9228 /* JMFSKModemConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4B5D5AE1ED0529B00AF8BDB /* JMFSKModemDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A393B5196AE1E3002C7324 /* JMFSKModemDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4B5D5AF1ED0542C00AF8BDB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4145CB3196971B900C61775 /* AudioToolbox.framework */; };
-		B4B5D5B01ED0543700AF8BDB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4145CB4196971B900C61775 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B41254711969BE15009D9228 /* JMFSKModemConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFSKModemConfiguration.h; sourceTree = "<group>"; };
 		B41254721969BE15009D9228 /* JMFSKModemConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFSKModemConfiguration.m; sourceTree = "<group>"; };
-		B4145CB3196971B900C61775 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		B4145CB4196971B900C61775 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B44E85881968AA5B00148E42 /* JMAudioSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAudioSource.h; sourceTree = "<group>"; };
 		B44E85891968AA5B00148E42 /* JMFSKModem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFSKModem.h; sourceTree = "<group>"; };
-		B44E858A1968AA5B00148E42 /* JMFSKModem.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = JMFSKModem.m; sourceTree = "<group>"; };
+		B44E858A1968AA5B00148E42 /* JMFSKModem.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = JMFSKModem.m; sourceTree = "<group>"; };
 		B44E858B1968AA5B00148E42 /* JMFSKRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFSKRecognizerDelegate.h; sourceTree = "<group>"; };
 		B44E858C1968AA5B00148E42 /* JMProtocolDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMProtocolDecoder.h; sourceTree = "<group>"; };
 		B44E858D1968AA5B00148E42 /* JMProtocolDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMProtocolDecoder.m; sourceTree = "<group>"; };
@@ -98,14 +92,11 @@
 		B44E85A21968AA6E00148E42 /* JMFSKSerialGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFSKSerialGenerator.h; sourceTree = "<group>"; };
 		B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = JMFSKSerialGenerator.m; sourceTree = "<group>"; };
 		B44E85A51968AA6E00148E42 /* JMPatternRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMPatternRecognizer.h; sourceTree = "<group>"; };
-		B44E85AF1968AD2200148E42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B44E85B11968ADAB00148E42 /* JMPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMPrefix.pch; sourceTree = "<group>"; };
 		B4A393B5196AE1E3002C7324 /* JMFSKModemDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFSKModemDelegate.h; sourceTree = "<group>"; };
 		B4A39420196B1037002C7324 /* FSKModem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSKModem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A39423196B1037002C7324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4A39424196B1037002C7324 /* FSKModem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSKModem.h; sourceTree = "<group>"; };
-		B4A39439196B1078002C7324 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		B4A3943A196B1078002C7324 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		B4B5D58C1ED0525900AF8BDB /* FSKModem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSKModem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B5D58E1ED0525900AF8BDB /* FSKModem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSKModem.h; sourceTree = "<group>"; };
 		B4B5D58F1ED0525900AF8BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,8 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A3943B196B1078002C7324 /* AudioToolbox.framework in Frameworks */,
-				B4A3943C196B1078002C7324 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,8 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B5D5B01ED0543700AF8BDB /* AVFoundation.framework in Frameworks */,
-				B4B5D5AF1ED0542C00AF8BDB /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,11 +123,6 @@
 		B44E85651968A9F900148E42 = {
 			isa = PBXGroup;
 			children = (
-				B4A39439196B1078002C7324 /* AudioToolbox.framework */,
-				B4A3943A196B1078002C7324 /* AVFoundation.framework */,
-				B4145CB3196971B900C61775 /* AudioToolbox.framework */,
-				B4145CB4196971B900C61775 /* AVFoundation.framework */,
-				B44E85AF1968AD2200148E42 /* Foundation.framework */,
 				B44E85701968A9F900148E42 /* FSKModem */,
 				B4A39421196B1037002C7324 /* OSX */,
 				B4B5D58D1ED0525900AF8BDB /* iOS */,

@@ -26,10 +26,12 @@
 #import "JMAudioOutputStream.h"
 #import "JMAudioInputStream.h"
 #import "JMFSKRecognizer.h"
-#import <AudioToolbox/AudioToolbox.h>
 #import "JMProtocolDecoder.h"
 #import "JMProtocolDecoderDelegate.h"
 #import "JMProtocolEncoder.h"
+
+@import AudioToolbox;
+@import AVFoundation;
 
 static const int SAMPLE_RATE = 44100;
 
@@ -75,14 +77,15 @@ static const int BYTES_PER_FRAME = (NUM_CHANNELS * (BITS_PER_CHANNEL / 8));
 	
 	if (_audioFormat)
 	{
-		delete _audioFormat;
+		free(_audioFormat);
+		_audioFormat = NULL;
 	}
 }
 
 -(void) setupAudioFormat
 {
-	_audioFormat = new AudioStreamBasicDescription();
-		
+	_audioFormat = (AudioStreamBasicDescription *)malloc(sizeof(AudioStreamBasicDescription));
+	
 	_audioFormat->mSampleRate = SAMPLE_RATE;
 	_audioFormat->mFormatID	= kAudioFormatLinearPCM;
 	_audioFormat->mFormatFlags = kAudioFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked;
