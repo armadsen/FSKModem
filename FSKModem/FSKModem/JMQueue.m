@@ -47,7 +47,7 @@
 
 -(void)enqueueObject:(NSObject *)obj
 {
-	dispatch_barrier_async(_queue,
+	dispatch_barrier_sync(_queue,
 	^{
 		JMQueueNode* node = [[JMQueueNode alloc]initWithObject:obj];
 	
