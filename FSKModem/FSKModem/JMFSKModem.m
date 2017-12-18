@@ -160,6 +160,7 @@ static const int BYTES_PER_FRAME = (NUM_CHANNELS * (BITS_PER_CHANNEL / 8));
 			
 			if (error)
 			{
+				NSLog(@"Error activating audio session: %@", error);
 				if (completion)
 				{
 					completion(YES);
@@ -217,6 +218,7 @@ static const int BYTES_PER_FRAME = (NUM_CHANNELS * (BITS_PER_CHANNEL / 8));
 			
 			if (error)
 			{
+				NSLog(@"Error deactivating audio session: %@", error);
 				if (completion)
 				{
 					completion(YES);
