@@ -23,8 +23,8 @@
 #import "JMProtocolEncoder.h"
 
 static const UInt8 START_BYTE = 0xFF;
-static const UInt8 ESCAPE_BYTE = 0x33;
-static const UInt8 END_BYTE = 0x77;
+static const UInt8 ESCAPE_BYTE = 0xEC;
+static const UInt8 END_BYTE = 0xBE;
 
 @implementation JMProtocolEncoder
 
