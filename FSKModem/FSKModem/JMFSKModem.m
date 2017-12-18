@@ -269,9 +269,13 @@ static const int BYTES_PER_FRAME = (NUM_CHANNELS * (BITS_PER_CHANNEL / 8));
 {
 	if (_connected)
 	{
-		[self disconnect:NULL];
-	
-		[self connect:NULL];
+		[self disconnect:^(BOOL error) {
+			if (error) {
+				NSLog(@"Error disconnecting upon route change. Won't reconnect.");
+				return;
+			}
+			[self connect:NULL];
+		}];
 	}
 }
 
