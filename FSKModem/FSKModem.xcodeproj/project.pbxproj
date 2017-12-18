@@ -16,7 +16,7 @@
 		B4A39442196B108E002C7324 /* JMAudioOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E859D1968AA6E00148E42 /* JMAudioOutputStream.m */; };
 		B4A39443196B108E002C7324 /* JMAudioStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E859F1968AA6E00148E42 /* JMAudioStream.m */; };
 		B4A39444196B108E002C7324 /* JMFSKRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E85A11968AA6E00148E42 /* JMFSKRecognizer.m */; };
-		B4A39445196B108E002C7324 /* JMFSKSerialGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.m */; };
+		B4A39445196B108E002C7324 /* JMFSKSerialGenerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.mm */; };
 		B4A39446196B108E002C7324 /* JMFSKModem.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E858A1968AA5B00148E42 /* JMFSKModem.m */; };
 		B4A39447196B108E002C7324 /* JMFSKModemConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B41254721969BE15009D9228 /* JMFSKModemConfiguration.m */; };
 		B4A39448196B10A2002C7324 /* JMProtocolDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B44E858C1968AA5B00148E42 /* JMProtocolDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,7 +44,7 @@
 		B4B5D5991ED0527C00AF8BDB /* JMAudioOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E859D1968AA6E00148E42 /* JMAudioOutputStream.m */; };
 		B4B5D59A1ED0527C00AF8BDB /* JMAudioStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E859F1968AA6E00148E42 /* JMAudioStream.m */; };
 		B4B5D59B1ED0527C00AF8BDB /* JMFSKRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E85A11968AA6E00148E42 /* JMFSKRecognizer.m */; };
-		B4B5D59C1ED0527C00AF8BDB /* JMFSKSerialGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.m */; };
+		B4B5D59C1ED0527C00AF8BDB /* JMFSKSerialGenerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.mm */; };
 		B4B5D59D1ED0527C00AF8BDB /* JMFSKModem.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E858A1968AA5B00148E42 /* JMFSKModem.m */; };
 		B4B5D59E1ED0527C00AF8BDB /* JMFSKModemConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B41254721969BE15009D9228 /* JMFSKModemConfiguration.m */; };
 		B4B5D59F1ED0529B00AF8BDB /* JMProtocolDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B44E858C1968AA5B00148E42 /* JMProtocolDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -90,7 +90,7 @@
 		B44E85A01968AA6E00148E42 /* JMFSKRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFSKRecognizer.h; sourceTree = "<group>"; };
 		B44E85A11968AA6E00148E42 /* JMFSKRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFSKRecognizer.m; sourceTree = "<group>"; };
 		B44E85A21968AA6E00148E42 /* JMFSKSerialGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFSKSerialGenerator.h; sourceTree = "<group>"; };
-		B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = JMFSKSerialGenerator.m; sourceTree = "<group>"; };
+		B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = JMFSKSerialGenerator.mm; sourceTree = "<group>"; };
 		B44E85A51968AA6E00148E42 /* JMPatternRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMPatternRecognizer.h; sourceTree = "<group>"; };
 		B44E85B11968ADAB00148E42 /* JMPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMPrefix.pch; sourceTree = "<group>"; };
 		B4A393B5196AE1E3002C7324 /* JMFSKModemDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFSKModemDelegate.h; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				B44E85A21968AA6E00148E42 /* JMFSKSerialGenerator.h */,
-				B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.m */,
+				B44E85A31968AA6E00148E42 /* JMFSKSerialGenerator.mm */,
 				B44E85881968AA5B00148E42 /* JMAudioSource.h */,
 			);
 			name = AudioSource;
@@ -389,7 +389,7 @@
 				B4A39442196B108E002C7324 /* JMAudioOutputStream.m in Sources */,
 				B4A39443196B108E002C7324 /* JMAudioStream.m in Sources */,
 				B4A39444196B108E002C7324 /* JMFSKRecognizer.m in Sources */,
-				B4A39445196B108E002C7324 /* JMFSKSerialGenerator.m in Sources */,
+				B4A39445196B108E002C7324 /* JMFSKSerialGenerator.mm in Sources */,
 				B4A39446196B108E002C7324 /* JMFSKModem.m in Sources */,
 				B4A39447196B108E002C7324 /* JMFSKModemConfiguration.m in Sources */,
 			);
@@ -407,7 +407,7 @@
 				B4B5D5991ED0527C00AF8BDB /* JMAudioOutputStream.m in Sources */,
 				B4B5D59A1ED0527C00AF8BDB /* JMAudioStream.m in Sources */,
 				B4B5D59B1ED0527C00AF8BDB /* JMFSKRecognizer.m in Sources */,
-				B4B5D59C1ED0527C00AF8BDB /* JMFSKSerialGenerator.m in Sources */,
+				B4B5D59C1ED0527C00AF8BDB /* JMFSKSerialGenerator.mm in Sources */,
 				B4B5D59D1ED0527C00AF8BDB /* JMFSKModem.m in Sources */,
 				B4B5D59E1ED0527C00AF8BDB /* JMFSKModemConfiguration.m in Sources */,
 			);
