@@ -54,12 +54,14 @@ static const UInt8 END_BYTE = 0xBE;
     if(input == START_BYTE)
     {
        _data = [NSMutableData data];
+		[_data appendBytes:&input length:1];
 		
 	   return;
     }
     
     if(input == END_BYTE)
     {
+		[_data appendBytes:&input length:1];
 		if ([_delegate respondsToSelector:@selector(decoder:didDecodeData:)])
 		{
 			[_delegate decoder:self didDecodeData:_data];

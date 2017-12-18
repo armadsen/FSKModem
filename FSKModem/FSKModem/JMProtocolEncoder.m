@@ -32,7 +32,15 @@ static const UInt8 END_BYTE = 0x77;
 {
 	NSMutableData* encodedData = [NSMutableData dataWithCapacity:data.length];
 	
-	// Append start byte
+	// Append start byte if not already present
+	uint8_t firstByte = *(uint8_t *)[data bytes];
+	uint8_t lastByte = *(uint8_t *)([data bytes] + data.length - 1);
+	if (firstByte == START_BYTE) {
+		data = [data subdataWithRange:NSMakeRange(1, data.length - 1)];
+	}
+	if (lastByte == END_BYTE) {
+		data = [data subdataWithRange:NSMakeRange(0, data.length - 1)];
+	}
 	
 	[encodedData appendBytes:&START_BYTE length:1];
 	
