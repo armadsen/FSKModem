@@ -29,6 +29,7 @@
 	
 	JMQueueNode* _firstNode;
 	JMQueueNode* _lastNode;
+	NSUInteger _count;
 	
 	dispatch_queue_t _queue;
 }
@@ -39,7 +40,7 @@
 	
 	if (self)
 	{
-		_queue = dispatch_queue_create("de.jensmeder.concurrencyQueue", DISPATCH_QUEUE_CONCURRENT);
+		_queue = dispatch_queue_create("de.jensmeder.concurrencyQueue", DISPATCH_QUEUE_SERIAL);
 	}
 	
 	return self;
@@ -47,8 +48,7 @@
 
 -(void)enqueueObject:(NSObject *)obj
 {
-	dispatch_barrier_sync(_queue,
-	^{
+	dispatch_async(_queue, ^{
 		JMQueueNode* node = [[JMQueueNode alloc]initWithObject:obj];
 	
 		if (_count == 0)
@@ -67,14 +67,9 @@
 
 -(id)dequeueQbject
 {
-	if (_count == 0)
-	{
-		return nil;
-	}
-	
 	__block JMQueueNode* node = nil;
-	dispatch_sync(_queue,
-	^{
+	dispatch_sync(_queue, ^{
+		if (_count == 0) { return; }
 		node = _firstNode;
 	
 		if(_count == 1)
@@ -95,6 +90,16 @@
 	});
 	
 	return node.object;
+}
+
+
+- (NSUInteger)count
+{
+	__block NSUInteger result = 0;
+	dispatch_sync(_queue, ^{
+		result = _count;
+	});
+	return result;
 }
 
 @end
