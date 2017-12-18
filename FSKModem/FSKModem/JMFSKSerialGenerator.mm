@@ -92,7 +92,7 @@ static const int NUMBER_OF_STOP_BITS = 1;
 	{
 		if(_queue.count > 0)
 		{
-			int preCarrierBitsCount = _configuration.baudRate / 25 + 1;
+			int preCarrierBitsCount = 150;//_configuration.baudRate / 25 + 1;
 
 			_bitCount = preCarrierBitsCount;
 			_sendCarrier = YES;
